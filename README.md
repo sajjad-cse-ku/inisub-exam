@@ -41,7 +41,7 @@ php artisan key:generate
 php artisan migrate
 ```
 
-#### 6. Install Tenancy
+#### 6. Install Tenancy (for create multiple website in one applicaiton that's why use laravel tenancy)
 ```sh
 php artisan tenancy:install
 ```
