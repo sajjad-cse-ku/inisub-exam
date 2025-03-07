@@ -50,7 +50,7 @@ php artisan tenancy:install
 php artisan serve
 ```
 
-#### Run Scheduler Command (check email sent or not)
+#### Run Scheduler Command (sent email via schedular using command)
 ```sh
 php artisan mail:send-subscriber-emails
 or
