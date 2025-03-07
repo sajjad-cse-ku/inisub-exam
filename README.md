@@ -46,7 +46,7 @@ php artisan migrate
 php artisan tenancy:install
 ```
 
-#### 7. Run Scheduler Command
+#### 7. Run Scheduler Command (check email sent or not)
 ```sh
 php artisan schedule:run
 ```
