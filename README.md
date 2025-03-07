@@ -52,6 +52,8 @@ php artisan serve
 
 #### Run Scheduler Command (check email sent or not)
 ```sh
+php artisan mail:send-subscriber-emails
+or
 php artisan schedule:run
 ```
 
