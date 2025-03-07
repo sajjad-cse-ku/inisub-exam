@@ -65,6 +65,75 @@ php artisan queue:work
 
 The application will be accessible at `http://127.0.0.1:8000`.
 
+
+## API Documentation
+
+### 1. Create Website
+**Endpoint:** `POST /api/create-website`
+
+**cURL Request:**
+```sh
+curl --location 'http://127.0.0.1:8000/api/create-website' \
+--form 'app_name="Nofi"' \
+--form 'domain="nofi.localhost"'
+```
+
+**Postman Request:**
+- Method: `POST`
+- URL: `http://127.0.0.1:8000/api/create-website`
+- Body (form-data):
+  - `app_name`: `Nofi`
+  - `domain`: `nofi.localhost`
+
+---
+
+### 2. Subscribe User
+**Endpoint:** `POST /api/subscribe`
+
+**cURL Request:**
+```sh
+curl --location 'app.localhost:8000/api/subscribe' \
+--header 'Cookie: XSRF-TOKEN=<your-token>; laravel_session=<your-session>' \
+--form 'email="user@test.com"'
+```
+
+**Postman Request:**
+- Method: `POST`
+- URL: `http://app.localhost:8000/api/subscribe`
+- Headers:
+  - `Cookie`: `XSRF-TOKEN=<your-token>; laravel_session=<your-session>`
+- Body (form-data):
+  - `email`: `user@test.com`
+
+---
+
+### 3. Store Blog Post
+**Endpoint:** `POST /api/blog-posts/store`
+
+**cURL Request:**
+```sh
+curl --location 'app.localhost:8000/api/blog-posts/store' \
+--header 'Cookie: XSRF-TOKEN=<your-token>; laravel_session=<your-session>' \
+--form 'title="My Blog post 1"' \
+--form 'description="This is Description"'
+```
+
+**Postman Request:**
+- Method: `POST`
+- URL: `http://app.localhost:8000/api/blog-posts/store`
+- Headers:
+  - `Cookie`: `XSRF-TOKEN=<your-token>; laravel_session=<your-session>`
+- Body (form-data):
+  - `title`: `My Blog post 1`
+  - `description`: `This is Description`
+
+---
+
+You can import these requests into Postman and update the `XSRF-TOKEN` and `laravel_session` values before making API calls.
+
+
+
+
 ## Contributing
 Feel free to fork this repository and create pull requests.
 
