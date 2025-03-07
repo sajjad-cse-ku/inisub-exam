@@ -82,8 +82,8 @@ curl --location 'http://127.0.0.1:8000/api/create-website' \
 - Method: `POST`
 - URL: `http://127.0.0.1:8000/api/create-website`
 - Body (form-data):
-  - `app_name`: `Nofi`
-  - `domain`: `nofi.localhost`
+  - `app_name`: `shop`
+  - `domain`: `shop.localhost`
 
 ---
 
@@ -93,15 +93,13 @@ curl --location 'http://127.0.0.1:8000/api/create-website' \
 **cURL Request:**
 ```sh
 curl --location 'app.localhost:8000/api/subscribe' \
---header 'Cookie: XSRF-TOKEN=<your-token>; laravel_session=<your-session>' \
+--header 'Accept: application/json' \
 --form 'email="user@test.com"'
 ```
 
 **Postman Request:**
 - Method: `POST`
 - URL: `http://app.localhost:8000/api/subscribe`
-- Headers:
-  - `Cookie`: `XSRF-TOKEN=<your-token>; laravel_session=<your-session>`
 - Body (form-data):
   - `email`: `user@test.com`
 
@@ -113,7 +111,7 @@ curl --location 'app.localhost:8000/api/subscribe' \
 **cURL Request:**
 ```sh
 curl --location 'app.localhost:8000/api/blog-posts/store' \
---header 'Cookie: XSRF-TOKEN=<your-token>; laravel_session=<your-session>' \
+--header 'Accept: application/json' \
 --form 'title="My Blog post 1"' \
 --form 'description="This is Description"'
 ```
@@ -121,8 +119,6 @@ curl --location 'app.localhost:8000/api/blog-posts/store' \
 **Postman Request:**
 - Method: `POST`
 - URL: `http://app.localhost:8000/api/blog-posts/store`
-- Headers:
-  - `Cookie`: `XSRF-TOKEN=<your-token>; laravel_session=<your-session>`
 - Body (form-data):
   - `title`: `My Blog post 1`
   - `description`: `This is Description`
