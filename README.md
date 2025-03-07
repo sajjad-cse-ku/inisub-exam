@@ -16,7 +16,7 @@ Ensure you have the following installed on your system:
 
 #### 1. Clone the Repository
 ```sh
-[git clone https://github.com/your-username/your-repository.git](https://github.com/sajjad-cse-ku/inisub-exam.git)
+https://github.com/sajjad-cse-ku/inisub-exam.git
 cd your-repository
 ```
 
