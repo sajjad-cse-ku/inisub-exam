@@ -45,21 +45,22 @@ php artisan migrate
 ```sh
 php artisan tenancy:install
 ```
-
-#### 7. Run Scheduler Command (check email sent or not)
-```sh
-php artisan schedule:run
-```
-
-#### 8. Run Queue Worker
-```sh
-php artisan queue:work
-```
-
 #### 9. Start the Development Server
 ```sh
 php artisan serve
 ```
+
+#### Run Scheduler Command (check email sent or not)
+```sh
+php artisan schedule:run
+```
+
+#### Run Queue Worker
+```sh
+php artisan queue:work
+```
+
+
 The application will be accessible at `http://127.0.0.1:8000`.
 
 ## Contributing
